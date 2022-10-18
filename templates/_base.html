@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Django - GEE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    {% comment %} <link href="css/style.css" rel="stylesheet"> {% endcomment %}
+    {{ map.header.render|safe }}
+</head>
+<body>
+{% comment %} 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">Django - GEE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+    </header> {% endcomment %}
+
+  
+        {% block content %}
+            
+        {% endblock %}
+
+   
+
+
+
+    {% comment %} <footer class="container pt-3 mt-4 text-muted border-top">
+        &copy; 2022
+    </footer> {% endcomment %}
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
+    <script>
+        {{map.script.render|safe}}
+    </script>
+</body>
+</html>
